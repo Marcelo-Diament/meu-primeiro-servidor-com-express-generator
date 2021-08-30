@@ -6,7 +6,7 @@ const controller = {
     });
   },
   show: (req, res, next) => {
-    const {apelido} = req.params
+    const { apelido } = req.params
     res.render('users', {
       titulo: `Usuário ${apelido}`,
       subtitulo: 'no site do Jefferson'
