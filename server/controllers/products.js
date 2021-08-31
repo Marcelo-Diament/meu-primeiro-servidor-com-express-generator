@@ -3,7 +3,7 @@ const controller = {
     res.render('products', {
       titulo: 'PRODUTOS',
       subtitulo: 'PRODUTOS DO JEFFERSON'
-    });
+    })
   },
   show: (req, res, next) => {
     const { nomeProduto } = req.params
@@ -12,7 +12,7 @@ const controller = {
       subtitulo: nomeProduto.toUpperCase(),
       preco: 690,
       cor: 'Azul'
-    });
+    })
   }
 }
 
