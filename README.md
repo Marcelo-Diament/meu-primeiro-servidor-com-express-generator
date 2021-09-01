@@ -132,6 +132,7 @@ Podemos aplicaro o conceito DRY - Don't Repeat Yourself (Não Seja Repetitivo) -
 
 ```ejs
 <%- include('./partials/head') %>
+<%- include('./partials/header') %>
 
 <h1><%= titulo %></h1>
 <p><%= subtitulo %></p>
