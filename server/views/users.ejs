@@ -1,31 +1,22 @@
-<!DOCTYPE html>
-<html>
+<%- include('./partials/head') %>
+<header>
+  <h1><%= titulo %></h1>
+  <p><%= subtitulo %></p>
+</header>
+<section class="users">
+  <h2>Usuários Registrados</h2>
 
-<head>
-  <title><%= titulo %></title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
+  <% for(let usuario of usuarios) { %>
 
-<body>
-  <header>
-    <img src="/images/users.jpg" alt="Imagem de Capa" height="250px" width="250px">
-    <h1><%= titulo %></h1>
-    <p><%= subtitulo %></p>
-  </header>
-  <section class="users">
-    <h2>Usuários Registrados</h2>
+  <article id="userCard<%= usuario.id %>" class="user-card">
+    <img src="<%= usuario.avatar %>" alt="Avatar do usuário <%= usuario.nome %>" class="user-avatar">
+    <h3 class="user-name"><%= usuario.nome %> <%= usuario.sobrenome %></h3>
+    <a href="/users/<%= usuario.id %>" class="user-btn">Ver Detalhes</a>
+  </article>
 
-    <% for(let usuario of usuarios) { %>
+  <% } %>
 
-    <article id="userCard<%= usuario.id %>" class="user-card">
-      <img src="<%= usuario.avatar %>" alt="Avatar do usuário <%= usuario.nome %>" class="user-avatar">
-      <h3 class="user-name"><%= usuario.nome %> <%= usuario.sobrenome %></h3>
-      <a href="/users/<%= usuario.id %>" class="user-btn">Ver Detalhes</a>
-    </article>
-
-    <% } %>
-
-  </section>
+</section>
 
 </body>
 
