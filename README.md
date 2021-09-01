@@ -87,3 +87,55 @@ A resposta desse método será a renderização de uma _view_ chamada `users` pa
 ```
 
 Então finalmente temos nossa view `users` , consumindo o título e o subtítulo enviados como segundo argumento do método `render` (que recebe o nome da _view_ e o objeto que terá suas propriedades compartilhadas com a _view_).
+
+## VIEW + JS
+
+Podemos usar JS dentro das views de maneira bem semelhante à sintaxe anterior:
+
+```ejs
+<section class="users">
+
+  <% for(let user of users) { %>
+
+  <article id="userCard<%= user.id %>" class="user-card">
+    <img src="<%= user.avatar %>" alt="Avatar do usuário <%= user.nome %>" class="user-avatar">
+    <h3 class="user-name"><%= user.nome %> <%= user.sobrenome %></h3>
+    <a href="/users/<%= user.id %>" class="user-btn">Ver Detalhes</a>
+  </article>
+
+  <% } %>
+
+</section>
+```
+
+Veja que misturamos HTML e JS num mesmo arquivo. =)
+
+## INCLUDE
+
+Podemos aplicaro o conceito DRY - Don't Repeat Yourself (Não Seja Repetitivo) - usando uma função chamada `include` , que recebe o caminho do arquivo cujo código será incorporado na nossa view. Exemplos de uso comuns: head, header, footer.... Veja:
+
+**./server/views/partials/head.ejs**
+
+```ejs
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Site do Jeff | <%= titulo %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+```
+
+**./server/views/index.ejs**
+
+```ejs
+<%- include('./partials/head') %>
+
+<h1><%= titulo %></h1>
+<p><%= subtitulo %></p>
+</body>
+
+</html>
+```
