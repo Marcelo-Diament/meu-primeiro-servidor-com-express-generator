@@ -7,7 +7,7 @@ const controller = {
   },
   show: (req, res, next) => {
     const { nomeProduto } = req.params
-    res.render('product', {
+    res.render('products', {
       titulo: 'PRODUTO',
       subtitulo: nomeProduto.toUpperCase(),
       preco: 690,

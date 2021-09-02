@@ -1,3 +1,14 @@
 <%- include('./partials/head') %>
 <%- include('./partials/header') %>
+<main>
+  <h2><%= subtitulo %></h2>
+
+  <% if(locals.cor && locals.preco) { %>
+
+  <p>Na cor <%= cor %> por apenas R$ <%= preco %>,00</p>
+
+  <% } %>
+
+</main>
+
 <%- include('./partials/footer') %>
