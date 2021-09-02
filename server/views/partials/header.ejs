@@ -1,4 +1,8 @@
 <header>
   <h1><%= titulo %></h1>
+  <% if(locals.textoPromo) { %>
+  <p><%= subtitulo %> | <%= textoPromo %></p>
+  <% } else {%>
   <p><%= subtitulo %></p>
+  <% } %>
 </header>

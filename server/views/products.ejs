@@ -1,14 +1,25 @@
 <%- include('./partials/head') %>
 <%- include('./partials/header') %>
+
 <main>
-  <h2><%= subtitulo %></h2>
+  <section>
+    <h2><%= subtitulo %></h2>
 
-  <% if(locals.cor && locals.preco) { %>
+    <% for(let produto of produtos) { %>
 
-  <p>Na cor <%= cor %> por apenas R$ <%= preco %>,00</p>
+    <article>
+      <img src="<%= produto.imagem %>" alt="Imagem do produto <%= produto.nome %>" height="100px" width="100px">
+      <h3><%= produto.nome %></h3>
+      <% if(produto.precoPromo) { %>
+      <p>DE R$ <%= produto.preco %>,00 POR APENAS R$ <%= produto.precoPromo %>,00</p>
+      <% } else { %>
+      <p>APENAS R$ <%= produto.preco %>,00</p>
+      <% } %>
+      <a href="" class="btn">Ver detalhes</a>
+    </article>
 
-  <% } %>
-
+    <% } %>
+  </section>
 </main>
 
 <%- include('./partials/footer') %>

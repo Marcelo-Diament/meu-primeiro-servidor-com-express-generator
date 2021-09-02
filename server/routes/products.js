@@ -3,6 +3,5 @@ const express = require('express'),
   productController = require('../controllers/products')
 
   router.get('/', productController.index)
-  router.get('/:nomeProduto', productController.show)
 
 module.exports = router
