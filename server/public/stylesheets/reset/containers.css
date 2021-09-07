@@ -51,9 +51,13 @@ body>main>section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  margin: var(--spacing-double) 0 0;
-  padding: var(--spacing);
+  margin: 0 auto;
+  padding: var(--spacing-quadruple) var(--spacing-double);
   width: 100%;
+}
+
+body>main>section>h2+p {
+  margin-bottom: var(--spacing);
 }
 
 body>main>section>article {

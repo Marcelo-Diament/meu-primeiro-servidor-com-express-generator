@@ -34,3 +34,11 @@
 .text-xxl {
   font-size: var(--font-size-xxl);
 }
+
+.text-bolder {
+  font-weight: bolder;
+}
+
+.text-bold {
+  font-weight: bold;
+}

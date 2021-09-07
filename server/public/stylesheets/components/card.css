@@ -65,7 +65,15 @@
 }
 
 .card .card__title {
-  text-align: center;
+  color: var(--tertiary-dark);
+}
+
+.card .card__price {
+  color: var(--tertiary);
+}
+
+.card .card__description {
+  color: var(--dark);
 }
 
 /* @media only screen and (min-width: 500px) {
