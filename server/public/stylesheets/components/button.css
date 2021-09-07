@@ -1,53 +1,41 @@
-.btn-group,
-a.btn-group,
-input.btn-group,
-button.btn-group {
+.btn-group {
   align-items: stretch;
   display: flex;
   flex-flow: row wrap;
   margin-top: var(--spacing-half);
 }
 
-.btn-group--start,
-a.btn-group--start,
-input.btn-group--start,
-button.btn-group--start {
+.btn-group--start {
   justify-content: flex-start;
 }
 
-.btn-group--center,
-a.btn-group--center,
-input.btn-group--center,
-button.btn-group--center {
+.btn-group--center {
   justify-content: center;
 }
 
-.btn-group--end,
-a.btn-group--end,
-input.btn-group--end,
-button.btn-group--end {
+.btn-group--end {
   justify-content: flex-end;
 }
 
-.btn-group--between,
-a.btn-group--between,
-input.btn-group--between,
-button.btn-group--between {
+.btn-group--between {
   justify-content: space-between;
 }
 
-.btn-group--evenly,
-a.btn-group--evenly,
-input.btn-group--evenly,
-button.btn-group--evenly {
+.btn-group--evenly {
   justify-content: space-evenly;
 }
 
-.btn-group--around,
-a.btn-group--around,
-input.btn-group--around,
-button.btn-group--around {
+.btn-group--around {
   justify-content: space-around;
+}
+
+.btn-group--full {
+  justify-content: center;
+}
+
+.btn-group--full button,
+.btn-group--full button.btn {
+  max-width: -webkit-fill-available;
 }
 
 .btn-group .btn,
