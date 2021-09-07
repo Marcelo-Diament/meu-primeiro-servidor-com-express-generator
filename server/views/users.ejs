@@ -1,13 +1,13 @@
 <%- include('./partials/head') %>
 <%- include('./partials/header') %>
-<section class="users">
-  <h2>Usuários Registrados</h2>
-  <% for(let usuario of usuarios) { %>
-  <article id="userCard<%= usuario.id %>" class="user-card">
-    <img src="<%= usuario.avatar %>" alt="Avatar do usuário <%= usuario.nome %>" class="user-avatar">
-    <h3 class="user-name"><%= usuario.nome %> <%= usuario.sobrenome %></h3>
-    <a href="/users/<%= usuario.id %>" class="user-btn">Ver Detalhes</a>
-  </article>
-  <% } %>
-</section>
+<main class="bg-light">
+  <section>
+    <h1 class="primary"><%= titulo %></h1>
+    <p class="primary-dark flex-item-full-row"><%= subtitulo %></p>
+  </section>
+  <section id="usuarios" class="bg-tertiary-light">
+    <h2 class="tertiary flex-item-full-row"><%= subtitulo %></h2>
+    <%- include('./partials/userCard') %>
+  </section>
+</main>
 <%- include('./partials/footer') %>

@@ -1,0 +1,4 @@
+body>header {
+  background-color: var(--dark);
+  color: var(--light);
+}

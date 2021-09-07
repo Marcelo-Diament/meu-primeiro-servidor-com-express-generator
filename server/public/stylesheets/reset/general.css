@@ -1,7 +1,5 @@
 html,
 body {
-  background-color: var(--light);
-  color: var(--dark);
   font-family: var(--font-default);
   font-size: var(--font-size);
   margin: 0;

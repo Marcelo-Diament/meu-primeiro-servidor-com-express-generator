@@ -87,6 +87,7 @@ small {
   font-size: 0.875rem;
   font-weight: bold;
   line-height: calc(1rem * 1.66);
+  padding: var(--spacing-quarter) var(--spacing-half);
 }
 
 big {

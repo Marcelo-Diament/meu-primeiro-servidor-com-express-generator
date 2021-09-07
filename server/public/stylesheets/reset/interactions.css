@@ -2,7 +2,7 @@ a {
   color: var(--tertiary);
   fill: var(--tertiary);
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* a:link {

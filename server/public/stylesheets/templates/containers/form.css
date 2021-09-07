@@ -1,0 +1,76 @@
+form input,
+form select,
+form textarea,
+form>fieldset input,
+form>fieldset select,
+form>fieldset textarea,
+form>fieldset>div input,
+form>fieldset>div select,
+form>fieldset>div textarea {
+  color: var(--primary-dark);
+}
+
+form>fieldset select option {
+  color: var(--primary);
+}
+
+form input[type="radio"],
+form>fieldset input[type="radio"],
+form>fieldset>div input[type="radio"] {
+  background-color: var(--light);
+  border: var(--border-light);
+  border-width: var(--border-width-md);
+  transition: background-color .25s ease-in;
+}
+
+form input[type="radio"]:checked,
+form>fieldset input[type="radio"]:checked,
+form>fieldset>div input[type="radio"]:checked {
+  background-color: var(--primary);
+  border: var(--border-light);
+  border-width: var(--border-width-md);
+}
+
+form input[type="radio"]:checked+label,
+form>fieldset input[type="radio"]:checked+label,
+form>fieldset>div input[type="radio"]:checked+label {
+  color: var(--light);
+}
+
+form input:focus,
+form>fieldset input:focus,
+form>fieldset>div input:focus {
+  border: var(--border-primary-light);
+  color: var(--primary);
+}
+
+
+form input[type="file"] {
+  color: var(--primary-light);
+}
+
+form input[type="file"]::-webkit-file-upload-button,
+form input[type="file"]::file-selector-button {
+  background-color: var(--primary-dark);
+  border: var(--border-primary-light);
+  color: var(--primary-light);
+  transition: background-color .4s ease-in-out, border .4s ease-in-out, color .4s ease-in-out;
+}
+
+form input[type="file"]::-webkit-file-upload-button:hover,
+form input[type="file"]::file-selector-button:hover {
+  background-color: var(--primary);
+  border: var(--border-light);
+  color: var(--light);
+}
+
+form input[type="file"]::-webkit-file-upload-button:active,
+form input[type="file"]::file-selector-button:active {
+  background-color: var(--tertiary-dark);
+  border: var(--border-tertiary-light);
+  color: var(--tertiary-light);
+}
+
+::placeholder {
+  color: var(--neutral-dark);
+}

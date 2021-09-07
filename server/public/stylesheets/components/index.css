@@ -1,1 +1,4 @@
-@import './buttons.css';
+@import './nav.css';
+@import './button.css';
+@import './badge.css';
+@import './card.css';
