@@ -37,7 +37,7 @@ const controller = {
   index: (req, res, next) => {
     res.render('products', {
       titulo: 'Produtos',
-      subtitulo: 'Veja todos os produtos',
+      subtitulo: 'Produtos incríveis para você',
       produtos,
       textoPromo: 'Ofertas imperdíveis'
     })

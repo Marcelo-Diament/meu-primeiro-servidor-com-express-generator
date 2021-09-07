@@ -1,10 +1,5 @@
-@import './components/buttons/index.css';
-
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+@import './tokens/index.css';
+@import './reset/index.css';
+@import './common/index.css';
+@import './components/index.css';
+@import './templates/index.css';
