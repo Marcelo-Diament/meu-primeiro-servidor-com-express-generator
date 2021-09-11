@@ -11,7 +11,8 @@
     "plano": "VIP",
     "email": "adriana.santos@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Adrian, nasci em 1951 e gosto de tirar caquinha do nariz."
   },
   {
     "id": 1,
@@ -25,7 +26,8 @@
     "plano": "Free",
     "email": "bruna.silva@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Bruna, nasci em 1967, em Woodstock. Sou filha da Janis Joplin com o Sergei - mas eles nunca admitiram. Por isso fui criada pelo Jim Morrison."
   },
   {
     "id": 2,
@@ -39,7 +41,8 @@
     "plano": "Pro",
     "email": "carlos.roberto@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Carlos, nasci em 1982 e Roberto é meu sobrenome mesmo."
   },
   {
     "id": 3,
@@ -53,7 +56,8 @@
     "plano": "VIP",
     "email": "douglas.funny@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Douglas, nasci em 1999 e tenho esse nome em homenagem ao Doug Funny (queriam me chamar de Costelinha, mas o delegado não deixou - ufa!)."
   },
   {
     "id": 4,
@@ -67,7 +71,8 @@
     "plano": "VIP",
     "email": "erik.gouveia@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Erik, nasci em 2002 e, apesar de ser veggie, não gosto de comer salada. Nem frutas. Muito menos legumes. Então só tomo água mesmo."
   },
   {
     "id": 5,
@@ -81,7 +86,8 @@
     "plano": "Free",
     "email": "flavia.oliveira@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Flávia, nasci em 1977 e gostava de passar trotes por telefone. Mas desde que incluíram uma bina no celular, não pude mais praticar esse meu hobbie."
   },
   {
     "id": 6,
@@ -95,7 +101,8 @@
     "plano": "Pro",
     "email": "gilson.soares@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Gilson, nasci em 1921 e tenho saudades da minha juventude."
   },
   {
     "id": 7,
@@ -109,7 +116,8 @@
     "plano": "Pro",
     "email": "helena.rios@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Helena, nasci em 1987 e no meu tempo livre, gosto de me fantasiar de Zé Gotinha e passear no shopping."
   },
   {
     "id": 8,
@@ -123,7 +131,8 @@
     "plano": "Free",
     "email": "igor.godoi@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Igor, nasci em 1988 e gosto de tirar caquinha do nariz."
   },
   {
     "id": 9,
@@ -137,7 +146,8 @@
     "plano": "VIP",
     "email": "joana.sousa@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Joana, nasci em 1994 e gosto de arrancar casquinha de machucado."
   },
   {
     "id": 10,
@@ -151,7 +161,8 @@
     "plano": "Pro",
     "email": "kenny.diniz@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Kenny, nasci em 1966. Meu apelido é Kenny D por que sou fã do Kenny G."
   },
   {
     "id": 11,
@@ -165,6 +176,7 @@
     "plano": "Free",
     "email": "luiz.da.cunha@jeff.co",
     "telefone": "+55 11 123456789",
-    "senha": "123"
+    "senha": "123",
+    "bio": "Eu sou Luiz, nasci em 2004 e gosto de assistir vídeos do Nelipe Feto."
   }
 ]

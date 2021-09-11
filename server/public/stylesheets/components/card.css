@@ -78,12 +78,38 @@
   color: var(--neutral-dark);
 }
 
-.card .card__price--old + .card__price {
+.card .card__price--old+.card__price {
   display: inline-block;
 }
 
 .card .card__description {
   color: var(--dark);
+}
+
+.card .card__content-container ul li p {
+  margin: 0 auto;
+}
+
+.card .card__content-container .bio {
+  margin: var(--spacing-double) auto;
+  overflow: inherit;
+  padding: var(--spacing);
+  position: relative;
+}
+
+.card .card__content-container .bio::before {
+  bottom: 0;
+  content: open-quote;
+  filter: opacity(.1);
+  font-family: fantasy;
+  font-size: 10rem;
+  left: calc(var(--spacing-half)*-1);
+  position: absolute;
+  right: 0;
+  top: var(--spacing-double);
+  transform: rotate(15deg);
+  transform-origin: 0 0;
+  width: fit-content;
 }
 
 /* @media only screen and (min-width: 500px) {

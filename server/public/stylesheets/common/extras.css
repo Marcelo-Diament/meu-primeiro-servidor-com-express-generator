@@ -14,3 +14,8 @@
 .flex-item-full-row {
   flex:1 0 100%;
 }
+
+[data-corpreferida*="#"] {
+  color: var(--cor-preferida);
+  font-weight: bold;
+}

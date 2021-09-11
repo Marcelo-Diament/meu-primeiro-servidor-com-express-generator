@@ -11,10 +11,11 @@ const controller = {
   },
   show: (req, res, next) => {
     const { id } = req.params
-    res.render('users', {
+    const usuario = usuariosPlaceholder[id]
+    res.render('user', {
       titulo: 'Usuário',
       subtitulo: `Usuário #${id}`,
-      usuarios: [usuariosPlaceholder[id]],
+      usuario,
       usuarioLogado: req.cookies.usuario
     });
   }

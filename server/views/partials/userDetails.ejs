@@ -1,0 +1,30 @@
+<article id="userCard<%= usuario.id %>" class="card card--img-full badge <%= usuario.plano === 'VIP' ? 'badge-tertiary' : usuario.plano === 'Free' ? 'badge-secondary' : 'badge-primary' %>" data-badge="<%= usuario.plano %>">
+  <div class="card__img-container rounded">
+    <img src="<%= usuario.avatar %>" alt="Avatar do usuário <%= usuario.nome %>">
+  </div>
+  <div class="card__content-container">
+    <small class="bg-tertiary-light">ID <%= usuario.id %></small>
+    <h4 class="card__title"><%= usuario.nome %> <%= usuario.segundoNome %> <%= usuario.sobrenome %></h4>
+    <ul>
+      <li>
+        <p><b>Apelido:</b> <%= usuario.apelido %></p>
+      </li>
+      <li>
+        <p><b>Email:</b> <%= usuario.email %></p>
+      </li>
+      <li>
+        <p><b>Telefone:</b> <%= usuario.telefone %></p>
+      </li>
+      <li>
+        <p><b>Nascimento:</b> <%= usuario.nascimento %></p>
+      </li>
+      <li>
+        <p><b>Cor Preferida:</b> <span data-corpreferida="<%= usuario.corPreferida %>" style="--cor-preferida: <%= usuario.corPreferida %>"><%= usuario.corPreferida %></span></p>
+      </li>
+    </ul>
+    <p class="bio"><%= usuario.bio %></p>
+    <div class="btn-group btn-group--center">
+      <a href="/usuarios" class="btn btn--tertiary-dark">Ver Todos</a>
+    </div>
+  </div>
+</article>
