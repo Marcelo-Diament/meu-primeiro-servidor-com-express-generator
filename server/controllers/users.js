@@ -5,7 +5,8 @@ const controller = {
     res.render('users', {
       titulo: 'Usuários',
       subtitulo: 'Listagem de Usuários',
-      usuarios: usuariosPlaceholder
+      usuarios: usuariosPlaceholder,
+      usuarioLogado: req.cookies.usuario
     });
   },
   show: (req, res, next) => {
@@ -13,7 +14,8 @@ const controller = {
     res.render('users', {
       titulo: 'Usuário',
       subtitulo: `Usuário #${id}`,
-      usuarios: [usuariosPlaceholder[id]]
+      usuarios: [usuariosPlaceholder[id]],
+      usuarioLogado: req.cookies.usuario
     });
   }
 }

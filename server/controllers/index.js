@@ -7,7 +7,8 @@ const controller = {
       titulo: 'Jeff Co.',
       subtitulo: 'Confira nossos Produtos e Usuários',
       usuarios: usuariosPlaceholder,
-      produtos: produtosPlaceholder
+      produtos: produtosPlaceholder,
+      usuarioLogado: req.cookies.usuario
     });
   }
 }

@@ -2,85 +2,169 @@
   {
     "id": 0,
     "nome": "Adriana",
+    "segundoNome": "",
     "sobrenome": "Santos",
+    "apelido": "",
+    "nascimento": "1951-10-31",
+    "corPreferida": "#0089a5",
     "avatar": "/images/adriana.png",
-    "plano": "VIP"
+    "plano": "VIP",
+    "email": "adriana.santos@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 1,
     "nome": "Bruna",
+    "segundoNome": "",
     "sobrenome": "Silva",
+    "apelido": "Bruninha",
+    "nascimento": "1967-11-11",
+    "corPreferida": "#f089a5",
     "avatar": "/images/bruna.png",
-    "plano": "Free"
+    "plano": "Free",
+    "email": "bruna.silva@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 2,
     "nome": "Carlos",
+    "segundoNome": "",
     "sobrenome": "Roberto",
+    "apelido": "Beto",
+    "nascimento": "1982-07-03",
+    "corPreferida": "#00f9a5",
     "avatar": "/images/carlos.png",
-    "plano": "Pro"
+    "plano": "Pro",
+    "email": "carlos.roberto@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 3,
     "nome": "Douglas",
+    "segundoNome": "",
     "sobrenome": "Funny",
+    "apelido": "",
+    "nascimento": "1999-06-21",
+    "corPreferida": "#008faf",
     "avatar": "/images/douglas.png",
-    "plano": "VIP"
+    "plano": "VIP",
+    "email": "douglas.funny@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 4,
     "nome": "Erik",
+    "segundoNome": "",
     "sobrenome": "Gouveia",
+    "apelido": "",
+    "nascimento": "2002-08-05",
+    "corPreferida": "#ffa20f",
     "avatar": "/images/erik.png",
-    "plano": "VIP"
+    "plano": "VIP",
+    "email": "erik.gouveia@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 5,
     "nome": "Flávia",
+    "segundoNome": "",
     "sobrenome": "Oliveira",
+    "apelido": "Flá",
+    "nascimento": "1977-07-01",
+    "corPreferida": "#0089ff",
     "avatar": "/images/flavia.png",
-    "plano": "Free"
+    "plano": "Free",
+    "email": "flavia.oliveira@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 6,
     "nome": "Gilson",
+    "segundoNome": "",
     "sobrenome": "Soares",
+    "apelido": "Gilsin",
+    "nascimento": "1921-09-15",
+    "corPreferida": "#c089c5",
     "avatar": "/images/gilson.png",
-    "plano": "Pro"
+    "plano": "Pro",
+    "email": "gilson.soares@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 7,
     "nome": "Helena",
+    "segundoNome": "",
     "sobrenome": "Rios",
+    "apelido": "Lena",
+    "nascimento": "1987-07-29",
+    "corPreferida": "#c8c9c5",
     "avatar": "/images/helena.png",
-    "plano": "Pro"
+    "plano": "Pro",
+    "email": "helena.rios@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 8,
     "nome": "Igor",
+    "segundoNome": "",
     "sobrenome": "Godoi",
+    "apelido": "Igodoi",
+    "nascimento": "1988-04-01",
+    "corPreferida": "#0649a5",
     "avatar": "/images/igor.png",
-    "plano": "Free"
+    "plano": "Free",
+    "email": "igor.godoi@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 9,
     "nome": "Joana",
+    "segundoNome": "Mariana",
     "sobrenome": "Sousa",
+    "apelido": "Jô",
+    "nascimento": "1994-03-12",
+    "corPreferida": "#984048",
     "avatar": "/images/joana.png",
-    "plano": "VIP"
+    "plano": "VIP",
+    "email": "joana.sousa@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 10,
     "nome": "Kenny",
+    "segundoNome": "",
     "sobrenome": "Diniz",
+    "apelido": "Kenny D",
+    "nascimento": "1966-02-28",
+    "corPreferida": "#0089a5",
     "avatar": "/images/kenny.png",
-    "plano": "Pro"
+    "plano": "Pro",
+    "email": "kenny.diniz@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   },
   {
     "id": 11,
     "nome": "Luiz",
+    "segundoNome": "Tadeu",
     "sobrenome": "da Cunha",
+    "apelido": "Lulu",
+    "nascimento": "2004-05-30",
+    "corPreferida": "#c84048",
     "avatar": "/images/luiz.png",
-    "plano": "Free"
+    "plano": "Free",
+    "email": "luiz.da.cunha@jeff.co",
+    "telefone": "+55 11 123456789",
+    "senha": "123"
   }
 ]

@@ -8,10 +8,14 @@ const controller = {
       subtitulo: 'Preencha os dados e acesse seu perfil!'
     });
   },
+  auth: (req, res, next) => {
+    res.redirect('../')
+  },
   register: (req, res, next) => {
     res.render('register', {
       titulo: 'Cadastro',
-      subtitulo: 'Preencha os dados e complete seu cadastro!'
+      subtitulo: req.cookies.usuario ? 'Verifique o formulário e atualize os dados desejados.' : 'Preencha os dados e complete seu cadastro!',
+      usuarioLogado: req.cookies.usuario
     });
   },
   lostPass: (req, res, next) => {
@@ -19,6 +23,9 @@ const controller = {
       titulo: 'Recuperação de Senha',
       subtitulo: 'Preencha os dados e recupere sua senha!'
     });
+  },
+  logout: (req, res, next) => {
+    res.clearCookie('usuario').redirect('../')
   }
 }
 

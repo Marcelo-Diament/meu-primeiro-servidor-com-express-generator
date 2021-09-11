@@ -6,7 +6,8 @@ const controller = {
       titulo: 'Produtos',
       subtitulo: 'Produtos incríveis para você',
       produtos: produtosPlaceholder,
-      textoPromo: 'Ofertas imperdíveis'
+      textoPromo: 'Ofertas imperdíveis',
+      usuarioLogado: req.cookies.usuario
     })
   },
   show: async (req, res, next) => {
@@ -16,7 +17,8 @@ const controller = {
       titulo: `${produto.nome}`,
       subtitulo: `${produto.nome} | ${produto.categoria}`,
       produto,
-      textoPromo: 'Últimas unidades!'
+      textoPromo: 'Últimas unidades!',
+      usuarioLogado: req.cookies.usuario
     });
   }
 }

@@ -8,37 +8,42 @@
   </section>
 
   <section id="cadastro" class="bg-secondary-dark">
-    <h2>Cadastre-se</h2>
+    <% if(!locals.usuarioLogado) { %>
+      <h2>Cadastre-se</h2>
+    <% } else { %>
+      <h2>Olá, <%= usuarioLogado.nome %></h2>
+      <p class="flex-item-full-row">Atualize o formulário e clique em 'Enviar' para atualizar seus dados.</p>
+    <% } %>
     <article>
       <form action="" id="cadastroForm" method="POST">
         <fieldset>
           <legend>Dados Pessoais</legend>
           <div class="input-group">
-            <input type="text" id="nome" name="nome" placeholder="Fulano" required>
+            <input type="text" id="nome" name="nome" placeholder="Fulano" required value="<%= locals.usuarioLogado && usuarioLogado.nome %>">
             <label for="nome">Nome</label>
           </div>
           <div class="input-group">
-            <input type="text" id="segundoNome" name="segundoNome" placeholder="Maria">
+            <input type="text" id="segundoNome" name="segundoNome" placeholder="Maria" value="<%= locals.usuarioLogado && usuarioLogado.segundoNome %>">
             <label for="segundoNome">Segundo Nome</label>
           </div>
           <div class="input-group">
-            <input type="text" id="sobrenome" name="sobrenome" placeholder="de Tal" required>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="de Tal" required value="<%= locals.usuarioLogado && usuarioLogado.sobrenome %>">
             <label for="sobrenome">Sobrenome</label>
           </div>
           <div class="input-group">
-            <input type="text" id="apelido" name="apelido" placeholder="Fulanito">
+            <input type="text" id="apelido" name="apelido" placeholder="Fulanito" value="<%= locals.usuarioLogado && usuarioLogado.apelido %>">
             <label for="apelido">Apelido</label>
           </div>
           <div class="input-group">
-            <input type="date" id="nascimento" name="nascimento" required>
+            <input type="date" id="nascimento" name="nascimento" required value="<%= locals.usuarioLogado && usuarioLogado.nascimento %>">
             <label for="nascimento">Data de Nascimento</label>
           </div>
           <div class="input-group">
-            <input type="number" id="idade" name="idade" min="18" max="150" step="1" placeholder="50">
+            <input type="number" id="idade" name="idade" min="18" max="150" step="1" placeholder="50" value="<%= locals.usuarioLogado && usuarioLogado.idade %>">
             <label for="idade">Idade</label>
           </div>
           <div class="input-group">
-            <input type="color" id="corPreferida" name="corPreferida" value="#e91e63">
+            <input type="color" id="corPreferida" name="corPreferida" value="<%= locals.usuarioLogado && usuarioLogado.corPreferida %>">
             <label for="corPreferida">Cor Preferida</label>
           </div>
           <div class="input-group">
@@ -56,7 +61,7 @@
                 }
               }
             </script>
-            <input type="file" id="avatar" name="avatar" accept=".jpg, .png, .gif">
+            <input type="file" id="avatar" name="avatar" accept=".jpg, .png, .gif" value="<%= locals.usuarioLogado && usuarioLogado.avatar %>">
             <label for="avatar">Avatar</label>
             <small id="avatarTip">Nenhum arquivo selecionado</small>
           </div>
@@ -64,11 +69,11 @@
         <fieldset>
           <legend>Dados de Contato</legend>
           <div class="input-group">
-            <input type="email" id="email" name="email" placeholder="fulanito@gmail.com" required>
+            <input type="email" id="email" name="email" placeholder="fulanito@gmail.com" required value="<%= locals.usuarioLogado && usuarioLogado.email %>">
             <label for="email">email</label>
           </div>
           <div class="input-group">
-            <input type="tel" id="telefone" name="telefone" placeholder="+5511987654321" required>
+            <input type="tel" id="telefone" name="telefone" placeholder="+5511987654321" required value="<%= locals.usuarioLogado && usuarioLogado.telefone %>">
             <label for="telefone">Telefone</label>
           </div>
           <div class="input-group">
