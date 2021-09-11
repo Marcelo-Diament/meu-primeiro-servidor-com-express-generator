@@ -4,18 +4,18 @@
     <img src="<%= produto.imagem %>" alt="Imagem do produto <%= produto.nome %>">
   </div>
   <div class="card__content-container">
-    <small class="bg-tertiary-light">ID #<%= produto.id %></small> <small class="bg-tertiary-light">SKU <%= produto.sku.toUpperCase() %></small>
+    <small class="bg-tertiary-light"><%= produto.categoria %></small> <small class="bg-tertiary-light"><%= produto.marca %></small> <small class="bg-tertiary-light">SKU <%= produto.sku.toUpperCase() %></small>
     <h4 class="card__title"><%= produto.nome %></h4>
     <% if (produto.precoPromo) { %>
-      <strike class="card__price--old"><%= produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) %></strike>
-      <h5 class="card__price"><%= produto.precoPromo.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) %></h5>
-      <% } else { %>
-      <h5 class="card__price"><%= produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) %></h5>
-      <% } %>
-      <p class="card__description"><%= produto.descricao %></p>
-      <div class="btn-group btn-group--center">
-        <a href="/produtos/<%= produto.id %>" class="btn btn--tertiary-dark">Ver Detalhes</a>
-      </div>
+    <strike class="card__price--old"><%= produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) %></strike>
+    <h5 class="card__price"><%= produto.precoPromo.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) %></h5>
+    <% } else { %>
+    <h5 class="card__price"><%= produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) %></h5>
+    <% } %>
+    <p class="card__description"><%= produto.descricao %></p>
+    <div class="btn-group btn-group--center">
+      <a href="/produtos/<%= produto.id %>" class="btn btn--tertiary-dark">Ver Detalhes</a>
+    </div>
   </div>
 </article>
 <% } %>

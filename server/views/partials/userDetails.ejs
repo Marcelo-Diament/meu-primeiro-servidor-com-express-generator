@@ -1,11 +1,11 @@
 <article id="userCard<%= usuario.id %>" class="card card--img-full badge <%= usuario.plano === 'VIP' ? 'badge-tertiary' : usuario.plano === 'Free' ? 'badge-secondary' : 'badge-primary' %>" data-badge="<%= usuario.plano %>">
   <div class="card__img-container rounded">
-    <img src="<%= usuario.avatar %>" alt="Avatar do usuário <%= usuario.nome %>">
+    <img src="<%= usuario.avatar %>" alt="Avatar do usuário <%= usuario.nome %>" width="150" height="150">
   </div>
   <div class="card__content-container">
     <small class="bg-tertiary-light">ID <%= usuario.id %></small>
-    <h4 class="card__title"><%= usuario.nome %> <%= usuario.segundoNome %> <%= usuario.sobrenome %></h4>
-    <ul>
+    <h3 class="card__title text-left"><%= usuario.nome %> <%= usuario.segundoNome %> <%= usuario.sobrenome %></h3>
+    <ul class="card__description">
       <li>
         <p><b>Apelido:</b> <%= usuario.apelido %></p>
       </li>
@@ -16,13 +16,13 @@
         <p><b>Telefone:</b> <%= usuario.telefone %></p>
       </li>
       <li>
-        <p><b>Nascimento:</b> <%= usuario.nascimento %></p>
+        <p><b>Nascimento:</b> <%= new Date(usuario.nascimento).toLocaleDateString('pt-BR') %></p>
       </li>
       <li>
         <p><b>Cor Preferida:</b> <span data-corpreferida="<%= usuario.corPreferida %>" style="--cor-preferida: <%= usuario.corPreferida %>"><%= usuario.corPreferida %></span></p>
       </li>
     </ul>
-    <p class="bio"><%= usuario.bio %></p>
+    <p class="card__description bio"><%= usuario.bio %></p>
     <div class="btn-group btn-group--center">
       <a href="/usuarios" class="btn btn--tertiary-dark">Ver Todos</a>
     </div>

@@ -13,6 +13,11 @@
   transition: filter .3s ease-in-out;
 }
 
+.single-page .card {
+  margin: var(--spacing-double) auto var(--spacing);
+  max-width: 1080px;
+}
+
 .card:hover {
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .4));
 }

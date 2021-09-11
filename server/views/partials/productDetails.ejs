@@ -3,7 +3,7 @@
     <img src="<%= produto.imagem %>" alt="Imagem do produto <%= produto.nome %>">
   </div>
   <div class="card__content-container">
-    <small class="bg-tertiary-light">ID #<%= produto.id %></small> <small class="bg-tertiary-light">SKU <%= produto.sku.toUpperCase() %></small>
+    <small class="bg-tertiary-light"><%= produto.categoria %></small> <small class="bg-tertiary-light"><%= produto.marca %></small> <small class="bg-tertiary-light">SKU <%= produto.sku.toUpperCase() %></small>
     <h4 class="card__title"><%= produto.nome %></h4>
     <% if (produto.precoPromo) { %>
     <strike class="card__price--old"><%= produto.preco.toLocaleString('pt-BR',{style:'currency',currency:'BRL'}) %></strike>
