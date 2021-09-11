@@ -17,8 +17,10 @@
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, .4));
 }
 
-.card p {
+.card p,
+.card .card__description {
   display: -webkit-box;
+  font-weight: normal;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   margin: var(--spacing-half) auto var(--spacing);
@@ -70,6 +72,14 @@
 
 .card .card__price {
   color: var(--tertiary);
+}
+
+.card .card__price--old {
+  color: var(--neutral-dark);
+}
+
+.card .card__price--old + .card__price {
+  display: inline-block;
 }
 
 .card .card__description {

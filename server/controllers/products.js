@@ -12,10 +12,10 @@ const controller = {
   show: async (req, res, next) => {
     const { id } = await req.params
     const produto = produtosPlaceholder[id]
-    res.render('products', {
+    res.render('product', {
       titulo: `${produto.nome}`,
       subtitulo: `${produto.nome} | ${produto.categoria}`,
-      produtos: [produto],
+      produto,
       textoPromo: 'Últimas unidades!'
     });
   }
