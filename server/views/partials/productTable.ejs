@@ -1,0 +1,16 @@
+<table class="bg-light">
+  <thead class="bg-tertiary-light">
+    <tr>
+      <th>Especificação</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(let especificacao in produto.especificacoes) { %>
+    <tr>
+      <td><%= especificacao %></td>
+      <td><%= produto.especificacoes[especificacao] || 'n/a' %></td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>

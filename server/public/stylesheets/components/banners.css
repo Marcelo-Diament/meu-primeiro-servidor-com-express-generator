@@ -1,0 +1,7 @@
+.banner-img-sm {
+  background-image: var(--card-img);
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-position: var(--this-position);
+}

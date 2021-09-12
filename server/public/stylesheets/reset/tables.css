@@ -1,0 +1,32 @@
+table {
+  margin: var(--spacing-double) auto;
+}
+
+tr {
+  padding: var(--spacing);
+}
+
+th, td {
+  line-height: var(--font-lg);
+  padding: var(--spacing-half) var(--spacing);
+  text-align: center;
+}
+
+tr td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 640px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1041px) {}
+
+@media only screen and (min-width: 1400px) {}
+
+@media only screen and (min-width: 1920px) {}
