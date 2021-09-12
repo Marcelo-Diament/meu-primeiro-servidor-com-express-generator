@@ -27,10 +27,10 @@ const controller = {
   },
   list: (req, res, next) => {
     let admin = req.cookies.admin
-    if (!admin) {
+    if (!admin || admin === 'false' || admin === false) {
       res.render('users', {
-        titulo: 'Usuários',
-        subtitulo: 'Listagem de Usuários',
+        titulo: 'Ops!',
+        subtitulo: 'Você não pode gerenciar usuários, apenas visualizá-los.',
         usuarios: usuariosPlaceholder,
         usuarioLogado: req.cookies.usuario,
         usuarioAdmin: admin,

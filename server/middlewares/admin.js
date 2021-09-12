@@ -2,11 +2,12 @@ const usuariosPlaceholder = require('../data/usuariosPlaceholder.json')
 
 const admin = async (req, res, next) => {
   let isAdmin = req.cookies.admin
-
-  if (!isAdmin) {
+  if (!isAdmin || isAdmin === 'false' || isAdmin === false) {
     res.render('login', {
       titulo: 'Ops!',
-      subtitulo: 'Você não tem permissões para ver essa tela...'
+      subtitulo: 'Você não tem permissões para ver essa tela...',
+      usuarioLogado: req.cookies.usuario,
+      usuarioAdmin: req.cookies.admin
     })
     return
   }

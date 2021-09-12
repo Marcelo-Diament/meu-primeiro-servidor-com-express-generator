@@ -29,10 +29,10 @@ const controller = {
   },
   list: (req, res, next) => {
     let admin = req.cookies.admin
-    if (!admin) {
+    if (!admin || admin === 'false') {
       res.render('products', {
-        titulo: 'Usuários',
-        subtitulo: 'Listagem de Usuários',
+        titulo: 'Ops!',
+        subtitulo: 'Você não pode gerenciar produtos, apenas visualizá-los.',
         produtos: usuariosPlaceholder,
         usuarioLogado: req.cookies.usuario,
         usuarioAdmin: admin,
@@ -41,8 +41,8 @@ const controller = {
       });
     } else {
       res.render('productsList', {
-        titulo: 'Usuários',
-        subtitulo: 'Listagem de Usuários',
+        titulo: 'Produtos',
+        subtitulo: 'Listagem de Produtos',
         produtos: produtosPlaceholder,
         usuarioLogado: req.cookies.usuario,
         usuarioAdmin: admin

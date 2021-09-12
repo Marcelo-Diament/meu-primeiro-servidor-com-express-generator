@@ -1,10 +1,8 @@
 const express = require('express'),
   router = express.Router(),
-  productController = require('../controllers/products'),
-  adminMiddleware = require('../middlewares/admin')
+  productController = require('../controllers/products')
 
   router.get('/', productController.index)
-  router.get('/listagem', adminMiddleware, productController.list)
   router.get('/:id', productController.show)
 
 module.exports = router

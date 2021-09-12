@@ -30,6 +30,18 @@ body:not(.admin) .nav--admin {
   text-decoration: underline;
 }
 
+.nav--admin.nav {
+  order: 2;
+}
+
+.nav--admin.nav .nav__list .nav__item {
+  margin: var(--spacing-half) auto var(--spacing-half) 0;
+}
+
+.nav--admin.nav .nav__list .nav__item a.nav__link span {
+  padding: var(--spacing-third) var(--spacing);
+}
+
 header {
   transition: left .8s ease-in-out;
 }
@@ -88,6 +100,16 @@ header.active #closeMenu.close-menu {
   .nav .nav__list .nav__item {
     padding: var(--spacing-half);
   }
+
+  .nav--admin.nav {
+    order: 0;
+  }
+
+  .nav--admin.nav .nav__list .nav__item {
+    margin: auto var(--spacing-half);
+    padding: var(--spacing-third) var(--spacing);
+  }
+
 
   header.active+main *,
   header.active+aside *,
