@@ -8,7 +8,8 @@ const controller = {
       produtos: produtosPlaceholder,
       textoPromo: 'Ofertas imperdíveis',
       usuarioLogado: req.cookies.usuario,
-      bannerTopo: '/images/banner-produtos-1920x480.png'
+      bannerTopo: '/images/banner-topo-produtos-1564x472.png',
+      bannerMeio: '/images/banner-meio-produtos-1920x1080.png'
     })
   },
   show: async (req, res, next) => {
@@ -20,7 +21,8 @@ const controller = {
       produto,
       textoPromo: 'Últimas unidades!',
       usuarioLogado: req.cookies.usuario,
-      bannerTopo: '/images/banner-produtos-1920x480.png'
+      bannerTopo: '/images/banner-topo-produto-1564x472.png',
+            bannerMeio: '/images/banner-meio-produto-1920x1080.png'
     });
   }
 }

@@ -2,7 +2,6 @@
   {
     "id": 0,
     "nome": "Adriana",
-    "segundoNome": "",
     "sobrenome": "Santos",
     "apelido": "Adri",
     "nascimento": "1951-10-31",
@@ -17,7 +16,6 @@
   {
     "id": 1,
     "nome": "Bruna",
-    "segundoNome": "",
     "sobrenome": "Silva",
     "apelido": "Bruninha",
     "nascimento": "1967-11-11",
@@ -32,7 +30,6 @@
   {
     "id": 2,
     "nome": "Carlos",
-    "segundoNome": "",
     "sobrenome": "Roberto",
     "apelido": "Beto",
     "nascimento": "1982-07-03",
@@ -47,7 +44,6 @@
   {
     "id": 3,
     "nome": "Douglas",
-    "segundoNome": "",
     "sobrenome": "Funny",
     "apelido": "",
     "nascimento": "1999-06-21",
@@ -62,7 +58,6 @@
   {
     "id": 4,
     "nome": "Erik",
-    "segundoNome": "",
     "sobrenome": "Gouveia",
     "apelido": "",
     "nascimento": "2002-08-05",
@@ -77,7 +72,6 @@
   {
     "id": 5,
     "nome": "Flávia",
-    "segundoNome": "",
     "sobrenome": "Oliveira",
     "apelido": "Flá",
     "nascimento": "1977-07-01",
@@ -92,7 +86,6 @@
   {
     "id": 6,
     "nome": "Gilson",
-    "segundoNome": "",
     "sobrenome": "Soares",
     "apelido": "Gilsin",
     "nascimento": "1921-09-15",
@@ -107,7 +100,6 @@
   {
     "id": 7,
     "nome": "Helena",
-    "segundoNome": "",
     "sobrenome": "Rios",
     "apelido": "Lena",
     "nascimento": "1987-07-29",
@@ -122,7 +114,6 @@
   {
     "id": 8,
     "nome": "Igor",
-    "segundoNome": "",
     "sobrenome": "Godoi",
     "apelido": "Igodoi",
     "nascimento": "1988-04-01",
@@ -137,7 +128,6 @@
   {
     "id": 9,
     "nome": "Joana",
-    "segundoNome": "Mariana",
     "sobrenome": "Sousa",
     "apelido": "Jô",
     "nascimento": "1994-03-12",
@@ -152,7 +142,6 @@
   {
     "id": 10,
     "nome": "Kenny",
-    "segundoNome": "",
     "sobrenome": "Diniz",
     "apelido": "Kenny D",
     "nascimento": "1966-02-28",
@@ -167,7 +156,6 @@
   {
     "id": 11,
     "nome": "Luiz",
-    "segundoNome": "Tadeu",
     "sobrenome": "da Cunha",
     "apelido": "Lulu",
     "nascimento": "2004-05-30",

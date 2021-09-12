@@ -32,10 +32,6 @@
             <label for="nome">Nome</label>
           </div>
           <div class="input-group">
-            <input type="text" id="segundoNome" name="segundoNome" placeholder="Maria" value="<%= locals.usuarioLogado && usuarioLogado.segundoNome %>">
-            <label for="segundoNome">Segundo Nome</label>
-          </div>
-          <div class="input-group">
             <input type="text" id="sobrenome" name="sobrenome" placeholder="de Tal" required value="<%= locals.usuarioLogado && usuarioLogado.sobrenome %>">
             <label for="sobrenome">Sobrenome</label>
           </div>
@@ -51,6 +47,17 @@
             <input type="number" id="idade" name="idade" min="18" max="150" step="1" placeholder="50" value="<%= locals.usuarioLogado && usuarioLogado.idade %>">
             <label for="idade">Idade</label>
           </div>
+          <% if(locals.usuarioLogado) { %>
+          <div class="input-group">
+            <input type="password" id="senha" name="senha" placeholder="Se quiser alterar" value="">
+            <label for="senha">Senha</label>
+          </div>
+          <% } else { %>
+          <div class="input-group">
+            <input type="password" id="senha" name="senha" placeholder="UmaS3nhaF0rt3!" required value="<%= locals.usuarioLogado && usuarioLogado.senha %>">
+            <label for="senha">Senha</label>
+          </div>
+          <% } %>
           <div class="input-group">
             <input type="color" id="corPreferida" name="corPreferida" value="<%= locals.usuarioLogado && usuarioLogado.corPreferida %>">
             <label for="corPreferida">Cor Preferida</label>

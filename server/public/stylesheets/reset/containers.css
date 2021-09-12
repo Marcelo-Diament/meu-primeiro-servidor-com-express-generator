@@ -60,7 +60,7 @@ body>main>section {
   justify-content: space-between;
   margin: 0 auto;
   padding: var(--spacing-quadruple) var(--spacing-double);
-  width: 100%;
+  width: calc(100vw - 17px);
 }
 
 body>main>section>h2+p {

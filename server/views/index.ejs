@@ -2,9 +2,9 @@
 <%- include('./partials/header') %>
 <main class="bg-light">
 
-  <section>
-    <h1 class="primary"><%= titulo %></h1>
-    <p class="primary-dark flex-item-full-row"><%= subtitulo %></p>
+  <section class="banner-img-sm bg-tertiary-dark" style="--card-img: url('<%= bannerTopo %>')">
+    <h1 class="light flex-item-full-row"><%= titulo %></h1>
+    <p class="primary text-center text-bolder flex-item-full-row"><%= subtitulo %></p>
   </section>
 
   <section id="produtos" class="bg-tertiary-light">
@@ -13,7 +13,7 @@
     <%- include('./partials/productCard') %>
   </section>
 
-  <section id="middleBanner" class="banner-img-sm bg-primary-dark" style="--card-img: url('https://miro.medium.com/max/3840/1*iE6YkWWfL55fNKduQ8Iuig.jpeg')">
+  <section id="middleBanner" class="banner-img-sm banner-img-sm--middle bg-primary-dark" style="--card-img: url('<%= bannerMeio %>')">
     <h2 class="light flex-item-full-row">Ofertas limitadas! Não vacila!</h2>
     <p class="primary text-center text-bolder flex-item-full-row">Se não levar hoje, pode ser que não tenha mais amanhã... melhor aproveitar a oportunidade né!</p>
   </section>

@@ -7,6 +7,11 @@
   background-size: 384% auto;
 }
 
+.banner-img-sm.banner-img-sm--middle {
+  background-position: center center;
+  background-size: cover;
+}
+
 @media only screen and (min-width: 420px) {
   .banner-img-sm {
     background-position: center top;

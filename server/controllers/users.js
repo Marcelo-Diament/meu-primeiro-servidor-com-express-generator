@@ -7,7 +7,8 @@ const controller = {
       subtitulo: 'Listagem de Usuários',
       usuarios: usuariosPlaceholder,
       usuarioLogado: req.cookies.usuario,
-      bannerTopo: '/images/banner-usuarios-1920x480.png'
+      bannerTopo: '/images/banner-topo-usuarios-1564x472.png',
+      bannerMeio: '/images/banner-meio-usuarios-1920x1080.png'
     });
   },
   show: (req, res, next) => {
@@ -18,7 +19,8 @@ const controller = {
       subtitulo: `Usuário #${id}`,
       usuario,
       usuarioLogado: req.cookies.usuario,
-      bannerTopo: '/images/banner-usuarios-1920x480.png'
+      bannerTopo: '/images/banner-topo-usuario-1564x472.png',
+      bannerMeio: '/images/banner-meio-usuario-1920x1080.png'
     });
   }
 }

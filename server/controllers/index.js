@@ -8,7 +8,9 @@ const controller = {
       subtitulo: 'Confira nossos Produtos e Usuários',
       usuarios: usuariosPlaceholder,
       produtos: produtosPlaceholder,
-      usuarioLogado: req.cookies.usuario
+      usuarioLogado: req.cookies.usuario,
+      bannerTopo: '/images/banner-topo-index-1564x472.png',
+      bannerMeio: '/images/banner-meio-index-1920x1080.png'
     });
   }
 }

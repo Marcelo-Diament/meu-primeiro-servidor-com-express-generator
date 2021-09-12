@@ -16,7 +16,7 @@ const auth = async (req, res, next) => {
       subtitulo: 'Algo de errado não deu certo...'
     })
   }
-  let usuario = JSON.parse(JSON.stringify(usuarioLogado[0], ['id', 'nome', 'segundoNome', 'sobrenome', 'apelido', 'nascimento', 'corPreferida', 'avatar', 'email', 'telefone', 'plano']))
+  let usuario = JSON.parse(JSON.stringify(usuarioLogado[0], ['id', 'nome', 'sobrenome', 'apelido', 'nascimento', 'corPreferida', 'avatar', 'email', 'telefone', 'plano']))
   res.cookie('usuario', usuario)
   // res.redirect('../')
   next()
