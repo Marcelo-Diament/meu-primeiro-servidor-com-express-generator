@@ -21,6 +21,14 @@
         <a class="nav__link" href="/acesso/login" title="Login">Login</a>
       </li>
       <% } else { %>
+      <% if(locals.usuarioLogado.admin) { %>
+      <li class="nav__item">
+        <a class="nav__link" href="/produtos/listagem" title="Acesse a página administrativa de produtos">Gestão Produtos</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="/usuarios/listagem" title="Acesse a página administrativa de usuários">Gestão Usuários</a>
+      </li>
+      <% } %>
       <li class="nav__item">
         <a href="/acesso/cadastro" class="nav__link">Olá, <%= usuarioLogado.nome %></a>
       </li>

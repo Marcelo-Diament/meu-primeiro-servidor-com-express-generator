@@ -9,6 +9,7 @@ const controller = {
       usuarios: usuariosPlaceholder,
       produtos: produtosPlaceholder,
       usuarioLogado: req.cookies.usuario,
+      usuarioAdmin: req.cookies.admin,
       bannerTopo: '/images/banner-topo-index-1564x472.png',
       bannerMeio: '/images/banner-meio-index-1920x1080.png'
     });

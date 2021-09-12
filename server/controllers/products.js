@@ -8,6 +8,7 @@ const controller = {
       produtos: produtosPlaceholder,
       textoPromo: 'Ofertas imperdíveis',
       usuarioLogado: req.cookies.usuario,
+      usuarioAdmin: req.cookies.admin,
       bannerTopo: '/images/banner-topo-produtos-1564x472.png',
       bannerMeio: '/images/banner-meio-produtos-1920x1080.png'
     })
@@ -21,9 +22,32 @@ const controller = {
       produto,
       textoPromo: 'Últimas unidades!',
       usuarioLogado: req.cookies.usuario,
+      usuarioAdmin: req.cookies.admin,
       bannerTopo: '/images/banner-topo-produto-1564x472.png',
             bannerMeio: '/images/banner-meio-produto-1920x1080.png'
     });
+  },
+  list: (req, res, next) => {
+    let admin = req.cookies.admin
+    if (!admin) {
+      res.render('products', {
+        titulo: 'Usuários',
+        subtitulo: 'Listagem de Usuários',
+        produtos: usuariosPlaceholder,
+        usuarioLogado: req.cookies.usuario,
+        usuarioAdmin: admin,
+        bannerTopo: '/images/banner-topo-produtos-1564x472.png',
+        bannerMeio: '/images/banner-meio-produtos-1920x1080.png'
+      });
+    } else {
+      res.render('productsList', {
+        titulo: 'Usuários',
+        subtitulo: 'Listagem de Usuários',
+        produtos: produtosPlaceholder,
+        usuarioLogado: req.cookies.usuario,
+        usuarioAdmin: admin
+      });
+    }
   }
 }
 

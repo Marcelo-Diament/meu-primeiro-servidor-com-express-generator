@@ -15,7 +15,8 @@ const controller = {
     res.render('register', {
       titulo: 'Cadastro',
       subtitulo: req.cookies.usuario ? 'Verifique o formulário e atualize os dados desejados.' : 'Preencha os dados e complete seu cadastro!',
-      usuarioLogado: req.cookies.usuario
+      usuarioLogado: req.cookies.usuario,
+      usuarioAdmin: req.cookies.admin
     });
   },
   lostPass: (req, res, next) => {

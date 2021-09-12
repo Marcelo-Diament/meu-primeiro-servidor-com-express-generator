@@ -7,6 +7,7 @@ const controller = {
       subtitulo: 'Listagem de Usuários',
       usuarios: usuariosPlaceholder,
       usuarioLogado: req.cookies.usuario,
+      usuarioAdmin: req.cookies.admin,
       bannerTopo: '/images/banner-topo-usuarios-1564x472.png',
       bannerMeio: '/images/banner-meio-usuarios-1920x1080.png'
     });
@@ -19,9 +20,32 @@ const controller = {
       subtitulo: `Usuário #${id}`,
       usuario,
       usuarioLogado: req.cookies.usuario,
+      usuarioAdmin: req.cookies.admin,
       bannerTopo: '/images/banner-topo-usuario-1564x472.png',
       bannerMeio: '/images/banner-meio-usuario-1920x1080.png'
     });
+  },
+  list: (req, res, next) => {
+    let admin = req.cookies.admin
+    if (!admin) {
+      res.render('users', {
+        titulo: 'Usuários',
+        subtitulo: 'Listagem de Usuários',
+        usuarios: usuariosPlaceholder,
+        usuarioLogado: req.cookies.usuario,
+        usuarioAdmin: admin,
+        bannerTopo: '/images/banner-topo-usuarios-1564x472.png',
+        bannerMeio: '/images/banner-meio-usuarios-1920x1080.png'
+      });
+    } else {
+      res.render('usersList', {
+        titulo: 'Usuários',
+        subtitulo: 'Listagem de Usuários',
+        usuarios: usuariosPlaceholder,
+        usuarioLogado: req.cookies.usuario,
+        usuarioAdmin: admin
+      });
+    }
   }
 }
 

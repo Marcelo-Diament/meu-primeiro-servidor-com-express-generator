@@ -1,0 +1,32 @@
+<article class="card">
+  <div class="card__content-container">
+    <table class="bg-light">
+      <thead class="bg-tertiary-light">
+        <tr>
+          <th>Nome Completo</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Nascimento</th>
+          <th>Controles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(let usuario of usuarios) { %>
+        <tr>
+          <td data-title="Nome"><%= usuario.nome || '' %> <%= usuario.sobrenome || '' %></td>
+          <td data-title="Email"><%= usuario.email || '' %></td>
+          <td data-title="Telefone"><%= usuario.telefone || '' %></td>
+          <td data-title="Nascimento"><%= new Date(usuario.nascimento).toLocaleDateString('pt-BR') || '' %></td>
+          <td data-title="Controles">
+            <div class="btn-group btn-group--center">
+              <a href="/usuarios/<%= usuario.id %>" target="_blank" rel="noopener noreferrer" class="btn btn--tertiary" title="Ver perfil">&#128065;</a>
+              <a href="/usuarios/<%= usuario.id %>/editar" class="btn btn--primary btn--disabled" title="Editar perfil" disabled>&#9998;</a>
+              <a href="/usuarios/<%= usuario.id %>/excluir" class="btn btn--secondary btn--disabled" title="Excluir perfil" disabled>&#128465;</a>
+            </div>
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</article>
