@@ -1,3 +1,7 @@
+body:not(.admin) .nav--admin {
+  display: none;
+}
+
 .nav .nav__list {
   margin-top: var(--spacing-double);
 }

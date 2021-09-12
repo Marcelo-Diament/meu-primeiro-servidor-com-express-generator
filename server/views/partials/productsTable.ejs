@@ -17,7 +17,7 @@
         <% for(let produto of produtos) { %>
         <tr>
           <td data-title="ID"><%= produto.id || '0' %></td>
-          <td data-title="Imagem"> <img src="<%= produto.imagem%>" alt="Thumb <%= produto.nome %>" width="24" height="24"></td>
+          <td data-title="Imagem"> <img src="<%= produto.imagem%>" alt="Thumb <%= produto.nome %>" width="48" height="48"></td>
           <td data-title="Nome"><%= produto.nome || '' %></td>
           <td data-title="Preço"><%= produto.precoPromo ? 'de ' + produto.preco : produto.preco %><%= produto.precoPromo && ' por ' + produto.precoPromo %></td>
           <td data-title="SKU"><%= produto.sku || '' %></td>

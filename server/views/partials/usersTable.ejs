@@ -3,6 +3,7 @@
     <table class="bg-light">
       <thead class="bg-tertiary-light">
         <tr>
+          <th>Avatar</th>
           <th>Nome Completo</th>
           <th>Email</th>
           <th>Telefone</th>
@@ -13,6 +14,7 @@
       <tbody>
         <% for(let usuario of usuarios) { %>
         <tr>
+          <td data-title="Avatar"> <img src="<%= usuario.avatar%>" alt="Thumb <%= usuario.nome %>" width="48" height="48" class="rounded"></td>
           <td data-title="Nome"><%= usuario.nome || '' %> <%= usuario.sobrenome || '' %></td>
           <td data-title="Email"><%= usuario.email || '' %></td>
           <td data-title="Telefone"><%= usuario.telefone || '' %></td>

@@ -8,8 +8,8 @@
   <tbody>
     <% for(let especificacao in produto.especificacoes) { %>
     <tr>
-      <td><%= especificacao %></td>
-      <td><%= produto.especificacoes[especificacao] || 'n/a' %></td>
+      <td data-title="Especificação" class="desktop-only"><%= especificacao %></td>
+      <td data-title="<%= especificacao %>"><%= produto.especificacoes[especificacao] || 'n/a' %></td>
     </tr>
     <% } %>
   </tbody>

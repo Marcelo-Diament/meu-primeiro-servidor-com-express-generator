@@ -2,9 +2,21 @@
   <a id="logoTopo" href="/" rel="noopener noreferrer" target="_blank" title="Ir para homepage">
     <img src="/images/logo.png" alt="Jeff Co." width="136" height="36">
   </a>
+  <% if(locals.usuarioLogado && locals.usuarioLogado.admin) { %>
+  <nav class="nav nav--admin">
+    <ul class="nav__list">
+      <li class="nav__item bg-secondary">
+        <a class="nav__link" href="/produtos/listagem" title="Acesse a página administrativa de produtos"><span class="light">Gestão Produtos</span></a>
+      </li>
+      <li class="nav__item bg-secondary">
+        <a class="nav__link" href="/usuarios/listagem" title="Acesse a página administrativa de usuários"><span class="light">Gestão Usuários</span></a>
+      </li>
+    </ul>
+  </nav>
+  <% } %>
   <nav class="nav">
     <ul class="nav__list">
-      <li class="nav__item">
+      <li class="nav__item desktop-only">
         <a class="nav__link" href="/" title="Acesse a página inicial">Início</a>
       </li>
       <li class="nav__item">
@@ -21,14 +33,6 @@
         <a class="nav__link" href="/acesso/login" title="Login">Login</a>
       </li>
       <% } else { %>
-      <% if(locals.usuarioLogado.admin) { %>
-      <li class="nav__item">
-        <a class="nav__link" href="/produtos/listagem" title="Acesse a página administrativa de produtos">Gestão Produtos</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="/usuarios/listagem" title="Acesse a página administrativa de usuários">Gestão Usuários</a>
-      </li>
-      <% } %>
       <li class="nav__item">
         <a href="/acesso/cadastro" class="nav__link">Olá, <%= usuarioLogado.nome %></a>
       </li>
