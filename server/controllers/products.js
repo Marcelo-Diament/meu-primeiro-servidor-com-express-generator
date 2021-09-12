@@ -7,7 +7,8 @@ const controller = {
       subtitulo: 'Produtos incríveis para você',
       produtos: produtosPlaceholder,
       textoPromo: 'Ofertas imperdíveis',
-      usuarioLogado: req.cookies.usuario
+      usuarioLogado: req.cookies.usuario,
+      bannerTopo: '/images/banner-produtos-1920x480.png'
     })
   },
   show: async (req, res, next) => {
@@ -18,7 +19,8 @@ const controller = {
       subtitulo: `${produto.nome} | ${produto.categoria}`,
       produto,
       textoPromo: 'Últimas unidades!',
-      usuarioLogado: req.cookies.usuario
+      usuarioLogado: req.cookies.usuario,
+      bannerTopo: '/images/banner-produtos-1920x480.png'
     });
   }
 }

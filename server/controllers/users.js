@@ -6,7 +6,8 @@ const controller = {
       titulo: 'Usuários',
       subtitulo: 'Listagem de Usuários',
       usuarios: usuariosPlaceholder,
-      usuarioLogado: req.cookies.usuario
+      usuarioLogado: req.cookies.usuario,
+      bannerTopo: '/images/banner-usuarios-1920x480.png'
     });
   },
   show: (req, res, next) => {
@@ -16,7 +17,8 @@ const controller = {
       titulo: 'Usuário',
       subtitulo: `Usuário #${id}`,
       usuario,
-      usuarioLogado: req.cookies.usuario
+      usuarioLogado: req.cookies.usuario,
+      bannerTopo: '/images/banner-usuarios-1920x480.png'
     });
   }
 }
