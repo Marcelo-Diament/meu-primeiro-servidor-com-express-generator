@@ -33,7 +33,7 @@ const controller = {
       res.render('products', {
         titulo: 'Ops!',
         subtitulo: 'Você não pode gerenciar produtos, apenas visualizá-los.',
-        produtos: usuariosPlaceholder,
+        produtos: produtosPlaceholder,
         usuarioLogado: req.cookies.usuario,
         usuarioAdmin: admin,
         bannerTopo: '/images/banner-topo-produtos-1564x472.png',

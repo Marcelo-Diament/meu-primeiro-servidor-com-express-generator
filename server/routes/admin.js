@@ -2,9 +2,12 @@ const express = require('express'),
   router = express.Router(),
   usersController = require('../controllers/users'),
   productsController = require('../controllers/products'),
+  acessoController = require('../controllers/acesso'),
   adminMiddleware = require('../middlewares/admin')
 
-router.get('/produtos', adminMiddleware, productsController.list)
-router.get('/usuarios', adminMiddleware, usersController.list)
+// ROTAS ADMINISTRATIVAS (REQUEREM QUE O USUÁRIO AUTENTICADO SEJA ADMIN)
+router.get('/produtos', adminMiddleware, productsController.list) // Tabela de produtos
+router.get('/usuarios', adminMiddleware, usersController.list) // Tabela de usuários
+router.get('/usuarios/:id/editar', adminMiddleware, acessoController.update) // Dados do usuário
 
 module.exports = router

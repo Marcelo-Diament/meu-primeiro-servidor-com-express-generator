@@ -1,13 +1,22 @@
 const express = require('express'),
   router = express.Router(),
   acessoController = require('../controllers/acesso'),
-  acessoMiddleware = require('../middlewares/auth')
+  authMiddleware = require('../middlewares/auth')
 
-  router.get('/cadastro', acessoController.register)
-  router.post('/cadastro', acessoController.add)
-  router.get('/login', acessoController.login)
-  router.post('/login', acessoMiddleware, acessoController.auth)
-  router.get('/logout', acessoController.logout)
-  router.get('/recuperar-senha', acessoController.lostPass)
+// ROTAS DE CADATRO
+router.get('/cadastro', acessoController.register) // Form de cadastro
+router.post('/cadastro', acessoController.add) // Execução do cadastro
+router.post('/cadastro/:id', acessoController.edit) // Execução do cadastro
+
+// ROTAS DE LOGIN
+router.get('/login', acessoController.login) // Form de login
+router.post('/login', authMiddleware, acessoController.auth) // Execução de login
+router.get('/logout', acessoController.logout) // Execução de logout
+
+// ROTA DE ESQUECI A SENHA
+router.get('/recuperar-senha', acessoController.lostPass) // Form de recuperação de senha
+/*
+ *  @TODO - router.post('/recuperar-senha', acessoController.recoverPass) // Execução de recuperação de senha
+ */
 
 module.exports = router

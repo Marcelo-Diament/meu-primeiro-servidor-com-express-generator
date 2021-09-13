@@ -27,7 +27,7 @@ const controller = {
   },
   list: (req, res, next) => {
     let admin = req.cookies.admin
-    if (!admin || admin === 'false' || admin === false) {
+    if (!admin || admin === 'false') {
       res.render('users', {
         titulo: 'Ops!',
         subtitulo: 'Você não pode gerenciar usuários, apenas visualizá-los.',
